@@ -1,19 +1,25 @@
 {
   "name": "staynest",
   "version": "1.0.0",
-  "description": "",
+  "description": "Property rental and listing platform built with Node.js, Express.js, MongoDB and EJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "ejs",
+    "property-rental",
+    "web-development"
+  ],
+  "author": "Prince Patel",
   "license": "ISC",
   "dependencies": {
     "connect-flash": "^0.1.1",
     "ejs": "^3.1.10",
     "ejs-mate": "^4.0.0",
-    "epress": "^0.0.1-security",
     "express": "^4.21.0",
     "express-session": "^1.18.1",
     "joi": "^17.13.3",
