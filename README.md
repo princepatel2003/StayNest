@@ -185,6 +185,16 @@ Controllers → EJS Views → Browser
 6. EJS renders the final HTML page.
 7. The response is sent back to the browser.
 
+## 📸 Screenshots
+### 🏠 All Listings
+![All Listings](screenshots/All_listing.png)
+### 🏡 Property Details & Reviews
+![Property Details and Reviews](screenshots/Property_and_review.png)
+### ➕ Create New Listing
+![Create New Listing](screenshots/new_listing.png)
+### 🔐 User Registration
+![User Registration](screenshots/signup.png)
+
 
 ## ⚙️ Installation & Setup
 
@@ -208,7 +218,7 @@ Make sure MongoDB is running locally on your system.
 StayNest currently connects to:
 
 ```text
-mongodb://127.0.0.1:27017/wanderlust
+mongodb://127.0.0.1:27017/staynest
 ```
 
 ### 4. Start the Application
