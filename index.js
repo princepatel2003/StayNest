@@ -73,3 +73,23 @@ app.use((req,res,next)=>{
     res.locals.currUser=req.user;
     next()
 });
+
+app.use("/listings",listingsRouter);
+app.use("/listings/:id/review",reviewRouter);
+app.use("/",userRouter);
+
+// for the other routes which do not exist
+app.all("*",(req,res,next)=>{
+    next(new ExpressError(404,"Page not found"));
+});
+
+// middleware controller
+app.use((err,req,res,next)=>{
+    console.log(err);
+    let {statusCode=500, message="something went wrong!"} = err;
+    res.status(statusCode).render("error.ejs",{message});
+});
+
+app.listen(8080,()=>{
+    console.log("app is listen on 8080");
+});
